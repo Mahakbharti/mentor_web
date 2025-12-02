@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahak – Ask Your Doubt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://i.postimg.cc/X7xb8P9H/img-(7).jpg" class="profile">
+        <h2>@thewebdevmahak</h2>
+        <p class="tagline">NIMCET • BCA • Coding Mentor 💻 | Ask Me Anything 😊</p>
+
+        <!-- Font Awesome Icons -->
+<div class="icon-links">
+    <a href="https://www.youtube.com/@thewebdevmahak-2z" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/in/mahak-bharti-40614a318/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Mahakbharti" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+        <h3>- Ask Your Doubt</h3>
+
+        <form id="doubtForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <select name="type" required>
+                <option value="">Select Category</option>
+                <option>NIMCET</option>
+                <option>Coding (Python/C++)</option>
+                <option>Frontend Dev</option>
+                <option>BCA</option>
+                <option>Career Guidance</option>
+                <option>Others</option>
+            </select>
+
+            <textarea name="message" placeholder="Explain your doubt…" required></textarea>
+
+            <select name="reply" required>
+                <option value="">Preferred Reply Method</option>
+                <option>Email</option>
+                <option>YouTube Comment</option>
+                <option>LinkedIn</option>
+                <option>Instagram DM</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Send</button>
+        </form>
+
+        <p id="responseMsg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

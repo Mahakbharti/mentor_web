@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3e8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.profile {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #9b5de5;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.tagline {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    background: #9b5de5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 80%;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #7a3cc4;
+}
+
+form {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px #ccc;
+}
+
+input, select, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 110px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #7b2cbf;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a189a;
+}
+
+#responseMsg {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.icon-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.icon-links a {
+    font-size: 32px;
+    color: #a259ff; /* Purple icon color */
+    transition: 0.3s ease;
+}
+
+.icon-links a:hover {
+    transform: scale(1.2);
+    color: #8a3ff0; /* Darker purple on hover */
+}
+
+/* Extra Responsive Tweaks */
+@media (max-width: 400px) {
+    .profile {
+        width: 90px;
+        height: 90px;
+    }
+
+    .icon-links a {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
